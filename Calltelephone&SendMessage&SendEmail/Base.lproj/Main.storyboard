@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yV-o2-sSJ">
+                                <rect key="frame" x="138" y="71" width="99" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="u6r-wf-XRg"/>
+                                    <constraint firstAttribute="height" constant="30" id="zYI-kH-LSK"/>
+                                </constraints>
+                                <state key="normal" title="打电话"/>
+                                <connections>
+                                    <action selector="callTelephone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QqF-cj-q62"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0S-j1-Vsw">
+                                <rect key="frame" x="165" y="145" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="8uU-Mk-e0K"/>
+                                    <constraint firstAttribute="height" constant="30" id="Emb-1H-Hav"/>
+                                </constraints>
+                                <state key="normal" title="发信息"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hYz-58-gxw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJ9-9I-AYj">
+                                <rect key="frame" x="165" y="216" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8Vk-uM-uQD"/>
+                                    <constraint firstAttribute="width" constant="45" id="enC-mg-E23"/>
+                                </constraints>
+                                <state key="normal" title="发邮件"/>
+                                <connections>
+                                    <action selector="sendEmail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56L-Tq-A96"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jJ9-9I-AYj" firstAttribute="top" secondItem="A0S-j1-Vsw" secondAttribute="bottom" constant="41" id="1N8-F9-a7T"/>
+                            <constraint firstItem="7yV-o2-sSJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="AqM-bz-irw"/>
+                            <constraint firstItem="A0S-j1-Vsw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAu-s2-WoR"/>
+                            <constraint firstItem="7yV-o2-sSJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a9a-9o-oxr"/>
+                            <constraint firstItem="A0S-j1-Vsw" firstAttribute="top" secondItem="7yV-o2-sSJ" secondAttribute="bottom" constant="44" id="pKD-ef-EsU"/>
+                            <constraint firstItem="jJ9-9I-AYj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s65-bY-DnU"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272.5" y="305.5"/>
+        </scene>
+    </scenes>
+</document>
